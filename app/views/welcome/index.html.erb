@@ -1,6 +1,6 @@
 <h1>Level Up</h1>
 
 <div id="nav" class="fourteen columns">
-  <h1>Welcome <%= current_user %></h1>
+  <h1>Welcome <%= current_user.username %></h1>
   <%= button_to "Sign Out", destroy_user_session_path, method: :delete %>
 </div>
