@@ -1,5 +1,8 @@
 Devise.setup do |config|
   # I want to be able to style my own views
+  config.reset_password_keys = [ :username ]
+  config.confirmation_keys = [ :username ]
+
   config.scoped_views = true
   config.authentication_keys = [ :login ]
 
