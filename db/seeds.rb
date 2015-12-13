@@ -38,3 +38,6 @@ lists = [
 lists.each do |l|
   List.create(l)
 end
+
+List.first.resources << Resource.first
+List.last.resources << Resource.last
