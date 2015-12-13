@@ -33,7 +33,7 @@ class User < ActiveRecord::Base
       user.uid = auth.uid
       return user
     end
-    
+
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.provider = auth.provider
       user.uid = auth.uid
