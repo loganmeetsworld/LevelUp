@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :lists
 
   attr_accessor :login
 
