@@ -26,6 +26,9 @@ resources.each do |r|
   Resource.create(r)
 end
 
+Resource.first.tags << Tag.first
+Resource.last.tags << Tag.last
+
 lists = [
   { name: "In process" },
   { name: "Internship Prep" },
