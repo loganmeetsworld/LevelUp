@@ -1,0 +1,8 @@
+<h1>Level Up</h1>
+<h3>Tags</h3>
+
+<% @tags.each do |tag| %>
+  <div>
+    <%= link_to tag.name, tag_path(tag.id) %>
+  </div>
+<% end %>

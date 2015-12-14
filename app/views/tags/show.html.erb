@@ -1,0 +1,18 @@
+<h1>Level Up</h1>
+
+<h3><%= @tag.name %></h3>
+
+<table>
+  <tr>
+    <th>Resource</th>
+    <th>Link</th>
+    <th>Description</th>
+  </tr>
+  <% @resources.each do |resource| %>
+    <tr>
+      <td><%= link_to resource.name, resource_path(resource.id) %></td>
+      <td><%= link_to "url", resource.link %></td>
+      <td><%= resource.description %></td>
+    </tr>
+  <% end %>
+</table>
